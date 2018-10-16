@@ -1,11 +1,8 @@
 <template>
-    <div class="indexList">
+    <div class="newsList">
         <h3>行业资讯</h3>
         <div class="row">
-            <div class="col-sm-5" v-for="(news, index) in newsArr" v-if="index==4">
-                <img :src="news.url" alt="">
-            </div>
-            <div class="col-sm-7">
+            <div class="col-sm-12">
 
                 <ul class="news-list">
                     <li v-for="(news, index) in newsArr" v-if="index>4 && index <=12">
@@ -26,15 +23,12 @@
 </script>
 
 <style>
-    .indexList {
+    .newsList {
         margin-bottom: 20px
     }
-    .indexList h3 {
+    .newsList h3 {
         border-bottom: 2px solid #dcdcdc;
         padding: 15px 0
-    }
-    .indexList .col-sm-5 img {
-        width: 100%;
     }
 
     .news-list {
